@@ -223,7 +223,7 @@ export function CinematicReveal() {
         </div>
 
         <div className="pointer-events-none absolute right-6 top-28 z-10 flex max-w-[46ch] flex-col items-end gap-5 text-right md:right-12 md:top-32">
-          <EyebrowBadge>TITAN II // FINAL FRAME</EyebrowBadge>
+          <EyebrowBadge>AWS CLOUD // CAREER JOURNEY</EyebrowBadge>
           <div className="relative self-stretch">
             <h2
               ref={h2InevitableRef}
@@ -232,7 +232,7 @@ export function CinematicReveal() {
             >
               I am
               <br />
-              <span className="text-accent">Inevitable.</span>
+              <span className="text-accent">DevOps Engineer</span>
             </h2>
             <h2
               ref={h2IronManRef}
@@ -241,18 +241,18 @@ export function CinematicReveal() {
             >
               And I am
               <br />
-              <span className="text-accent">Iron Man.</span>
+              <span className="text-accent">DevOps Engineer</span>
             </h2>
           </div>
           <p className="max-w-[42ch] font-sans text-sm leading-relaxed text-zinc-400 md:text-base">
-            Endgame &mdash; the snap heard across the universe. J.A.R.V.I.S. held the last frame so we could rebuild from it.
+            My journey through Cloud Computing, AWS, Terraform, Docker, Kubernetes and DevOps Automation. Every project helped build stronger infrastructure and better deployment pipelines.
           </p>
         </div>
 
         <div className="pointer-events-none absolute left-6 top-20 z-10 flex items-center gap-2 md:left-10 md:top-24">
           <div className="h-px w-8 bg-accent/60" />
           <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-zinc-400">
-            Flight Log &mdash; Archived
+            PORTFOLIO // LOADING
           </span>
         </div>
 
@@ -278,8 +278,8 @@ export function CinematicReveal() {
             />
           </div>
           <div className="mx-6 flex items-center justify-between pb-4 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:mx-10">
-            <span>MARK III // ARCHIVE</span>
-            <span>J.A.R.V.I.S. // PLAYBACK</span>
+            <span>DEVOPS // EXPERIENCE</span>
+            <span>AWS // TERRAFORM // KUBERNETES // DOCKER</span>
             <span>Scroll &darr;</span>
           </div>
         </div>
@@ -352,20 +352,20 @@ export function CinematicReveal() {
           style={{ opacity: 0, transition: "opacity 80ms linear" }}
         >
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
-            Next &mdash; engage
+            Next &mdash; Experience
           </span>
           <a
             href="#systems"
             className="pointer-events-auto inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-5 py-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-200 hover:bg-white/[0.12] active:translate-y-[1px]"
           >
-            Open diagnostics
+            View Skills
             <span aria-hidden>&darr;</span>
           </a>
         </div>
 
         {!loaded && (
           <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-5 bg-background px-6">
-            <EyebrowBadge>FLIGHT LOG // RESTORING</EyebrowBadge>
+            <EyebrowBadge>Career Timeline — Active</EyebrowBadge>
             <div className="h-px w-60 bg-white/10 md:w-80">
               <div
                 className="h-full bg-accent transition-[width] duration-150 ease-out"
@@ -373,7 +373,7 @@ export function CinematicReveal() {
               />
             </div>
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-zinc-500">
-              Rendering Mark III &nbsp;&middot;&nbsp; {Math.round(loadProgress * 100)}%
+              Loading DevOps Portfolio &nbsp;&middot;&nbsp; {Math.round(loadProgress * 100)}%
             </p>
           </div>
         )}
