@@ -14,47 +14,50 @@ export function Footer() {
                 aria-hidden
                 className="inline-block h-2 w-2 rounded-full bg-accent shadow-[0_0_12px_rgba(212,162,47,0.9)]"
               />
-              Stark / Industries
+               Sumit / Jena
             </div>
             <p className="max-w-[38ch] font-sans text-sm leading-relaxed text-zinc-400">
-              &copy; Stark Industries &mdash; 10880 Malibu Point, 90265.
-              Registered trademark of the Office of Howard &amp; Anthony E. Stark.
+               © 2026 Sumit Jena.
+              DevOps Engineer | AWS | Terraform | Docker | Kubernetes | Jenkins
             </p>
           </div>
 
           <nav className="grid grid-cols-2 gap-x-10 gap-y-3 md:grid-cols-3">
-            {[
-              ["Mark I", "Cave, Afghanistan"],
-              ["Mark III", "Monaco Circuit"],
-              ["Mark VII", "Stark Tower"],
-              ["Mark XLIV", "Hulkbuster"],
-              ["Mark L", "Titan"],
-              ["Mark LXXXV", "Endgame"],
-            ].map(([name, note]) => (
-              <a
-                key={name}
-                href="#"
-                className="group flex flex-col gap-1"
-              >
-                <span className="font-sans text-[13px] font-medium text-foreground transition-colors group-hover:text-accent">
-                  {name}
-                  <ArrowUpRight
-                    size={11}
-                    weight="bold"
-                    className="ml-1 inline-block align-baseline opacity-0 transition-opacity group-hover:opacity-100"
-                  />
-                </span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
-                  {note}
-                </span>
-              </a>
-            ))}
-          </nav>
+  {[
+    ["GitHub", "https://github.com/SumitJena1998"],
+    ["LinkedIn", "https://linkedin.com/in/sumit-r-jena-898b341b0"],
+    ["AWS", "Cloud Engineering"],
+    ["Terraform", "Infrastructure as Code"],
+    ["Docker", "Containerization"],
+    ["Kubernetes", "Orchestration"],
+  ].map(([name, note]) => (
+    <a
+      key={name}
+      href={note.startsWith("http") ? note : "#"}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex flex-col gap-1"
+    >
+      <span className="font-sans text-[13px] font-medium text-foreground transition-colors group-hover:text-accent">
+        {name}
+        <ArrowUpRight
+          size={11}
+          weight="bold"
+          className="ml-1 inline-block align-baseline opacity-0 transition-opacity group-hover:opacity-100"
+        />
+      </span>
+
+      <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+        {note}
+      </span>
+    </a>
+  ))}
+</nav>
         </div>
 
         <div className="flex flex-col gap-2 border-t border-white/5 pt-6 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:flex-row md:items-center md:justify-between">
-          <span>Build 2026.04.21 &nbsp;&middot;&nbsp; Mark LXXXV &nbsp;&middot;&nbsp; J.A.R.V.I.S. Online</span>
-          <span>Proof of concept &mdash; fan art, no commercial use</span>
+          <span>  Build 2026 · DevOps Portfolio · Online</span>
+          <span> AWS • Terraform • Docker • Kubernetes • Jenkins</span>
         </div>
       </div>
     </footer>

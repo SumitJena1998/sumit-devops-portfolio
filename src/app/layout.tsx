@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stark Industries — Mark LXXXV",
+  title: "Sumit Jena | DevOps Engineer",
   description:
-    "Arc reactor online. J.A.R.V.I.S. standing by. Scroll to engage the Mark LXXXV.",
+     "DevOps Engineer specializing in AWS, Terraform, Docker, Kubernetes, Jenkins and Cloud Infrastructure.",
   metadataBase: new URL("http://localhost:3000"),
 };
 
