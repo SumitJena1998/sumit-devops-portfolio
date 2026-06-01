@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
     >
       <body className="relative min-h-full bg-background text-foreground grain">
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <Analytics />
       </body>
     </html>
   );
